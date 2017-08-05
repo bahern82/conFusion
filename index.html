@@ -118,8 +118,8 @@
                     <div class="card-block">
                         <form>
                             <dl class="row ">
-                                <dt class="col-3">Number of Guests</dt>
-                                <dl class="col-9">
+                                <dt class="col-12 col-sm-3">Number of Guests</dt>
+                                <dl class="col-12 col-sm-9">
                                     <div class="form-check form-check-inline">
                                         <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
@@ -132,7 +132,7 @@
                                     </div>
                                     <div class="form-check form-check-inline">
                                           <label class="form-check-label">
-                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 2
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
                                           </label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -154,26 +154,33 @@
                             </dl><!--end first card-block row -->
 
                             <dl class="row ">
-                                <dt class="col-3">Date and Time</dt>
-                                <dl class="col-4">
+                                <dt class="col-12 col-sm-3">Date and Time</dt>
+                                <dl class="col-12 col-sm-4">
                                    
-                                         
-                                          <input type="date" name="date" class="form-control" aria-describedby="basic-addon1" placeholder="date">
+                                         <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                          <input type="text" class="form-control" placeholder="Date" aria-describedby="basic-addon1">
+                                        </div>
+                                          <!-- <input type="date" name="date" class="form-control" aria-describedby="basic-addon1" placeholder="date"> -->
                                     
                                        
                                 </dl>
-                                <dl class="col-4">
-                                    <input type="time" name="time" placeholder="time">
+                                <dl class="col-12 col-sm-4">
+                                    <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon2"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                          <input type="text" class="form-control" placeholder="Time" aria-describedby="basic-addon2">
+                                        </div>
+                                    <!-- <input type="time" name="time" placeholder="time"> -->
                                 </dl>
                                
                                    
                                
                             </dl>
                             <dl class="row">
-                                <dt class="col-6">
-                                <dl class="col-offset-3"></dl>
-                                    <button type="submit" class="form-control btn-primary"> reserve </button>    
+                                <dt class ="col-sm-4 offset-sm-3 col-6">
+                                    <button type="submit" class="form-control btn-primary"> reserve </button>
                                 </dt>
+                                  
                             </dl>    
 
                             
