@@ -15,5 +15,25 @@ $(document).ready(function(){
                 
 
             });
-         
+            //toggle modals
+            $("#loginButton").click( function(){
+
+                $("#loginModal").modal('toggle');
+            });
+            $("#reserveButton").click( function(){
+                $("#reserveModal").modal('toggle');
+            });
+            //hide modals
+             $("#loginModalHeaderButton").click( function(){
+                $("#loginModal").modal('hide');
+            }) 
+              $("#loginModalCancelButton").click( function(){
+                $("#loginModal").modal('hide');
+            })
+               $("#reserveModalHeaderButton").click( function(){
+                $("#reserveModal").modal('hide');
+            }) 
+              $("#reserveModalCancelButton").click( function(){
+                $("#reserveModal").modal('hide');
+            })      
         }); //end ready function
